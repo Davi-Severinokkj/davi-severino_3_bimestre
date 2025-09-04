@@ -11,7 +11,7 @@
     font-family: "roboto", sans-serif;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(23, 140, 199);
+    background-color: #178cc7;
     border-radius: 10px;
     width: 200px;
     height: auto;
@@ -20,11 +20,14 @@
     border: 1px solid;
     text-decoration: none;
 }
-.about_us_txt{
-    color: inherit;
-    text-decoration: none;
-}
 .about_us_txt:hover{
     display: flex;
     color: brown;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: #1fa4eb;
 }

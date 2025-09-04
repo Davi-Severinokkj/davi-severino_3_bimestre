@@ -31,3 +31,20 @@ a{
 a:hover{
     color: #1fa4eb;
 }
+.fake-input {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid #178cc7;
+  border-radius: 6px;
+  color: #178cc7;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+.more_info{
+    border: 0;
+    border-radius: 234px solid;
+    background-color: rgb(5, 175, 5);
+}
+.button_more_info:hover{
+    color: aquamarine;
+}

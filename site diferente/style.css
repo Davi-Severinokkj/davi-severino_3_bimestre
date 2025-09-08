@@ -3,6 +3,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    height: 200vh;
+    background: url('images/imagem\ de\ fundo\ 2.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .logo{
     width: 150px;
@@ -53,4 +57,27 @@ input[type="search"]{
     padding: 5px;
     border: none;
     border-radius: 5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.text_main h1{
+    color: white;
+    font-size: 30px;
+    padding: 75px 20px 20px 20px;
+    font-weight: bold;
+}
+.text_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(63, 60, 57);
+    margin: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.h-30{
+    height: 30vh;
 }

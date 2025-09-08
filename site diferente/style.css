@@ -72,7 +72,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background-color: rgb(63, 60, 57);
     margin: 100px;
     border: 1px solid black;
@@ -80,4 +80,16 @@ html {
 }
 .h-30{
     height: 30vh;
+}
+.about-us_container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 100vh;
 }

@@ -3,38 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Severino Solutions</title>
+    <title>Contato - Severino Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <main>
-                <header>
+        <header>
             <div class="header_container">
                 <div class="col-50">
-                    <img class="logo" src="images/Severino Solutions.png" alt="">
+                    <img class="logo" src="images/Severino Solutions.png" alt="Severino Solutions">
                 </div>
                 <div class="col-50">
                     <div class="contatos">
-                        <a href="">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    
-                    <a href="">
-                        <i class="fa-brands fa-square-whatsapp"></i>
-                    </a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
                     </div>                                   
                 </div>  
             </div>
         </header>
+
         <nav class="nav_container menu">
             <a href="index.html">Home</a>
-            <input type="search" name="" id="" placeholder="Pesquisar...">
-    </nav>
+            <a href="index.html#services">Serviços</a>
+            <a href="index.html#about_us">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <input type="search" placeholder="Pesquisar...">
+        </nav>
 
+        <div class="text_main dois">
+            <h1>Fale Conosco</h1>
+            <small>Estamos aqui para ajudar! Preencha o formulário abaixo para entrar em contato conosco.</small>
+        </div>
 
+        <div class="services_container">
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: white;">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
 
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="6" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+                <button type="submit" style="padding: 12px; border: none; border-radius: 5px; background-color: gray; color: white; font-size: 16px; cursor: pointer;">Enviar</button>
+            </form>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer_container">
+            <h5>©2025 Severino Solutions - Todos os direitos reservados. Desenvolvido por Davi Severino</h5>
+        </div>
+    </footer>
 </body>
 </html>

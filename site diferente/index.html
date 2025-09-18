@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Severino Solutions</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="cards.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,10 +21,10 @@
                 </div>
                 <div class="col-50">
                     <div class="contatos">
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                    </div>                                   
-                </div>  
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -29,50 +33,71 @@
             <a href="#services">Serviços</a>
             <a href="#about_us">Sobre</a>
             <a href="contato.html">Contato</a>
-            <input type="search" placeholder="Pesquisar...">
+            <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
         </nav>
 
         <div class="text_main">
             <div class="h-30">
-                <h1>Seja bem vindo a Severino Solutions!</h1>
+                <h1>Seja bem-vindo à Severino Solutions!</h1>
                 <small>A sua solução em tecnologia e inovação.</small>
-            </div>
-        </div> 
-
-        <div class="services_container" id="services">
-            <h1>Serviços</h1>
-            <div class="icons-services_container">
-                <div class="service_box">
-                    <a href=""><i class="fa-regular fa-bell"></i></a> 
-                    <h3>Consultoria</h3>
-                </div>
-                <div class="service_box">
-                    <a href=""><i class="fa-regular fa-user"></i></a>
-                    <h3>Cliente</h3>
-                </div>
-                <div class="service_box">
-                    <a href="suporte.html"><i class="fa-solid fa-address-card"></i></a>
-                    <h3>Suporte</h3>
-                </div>
             </div>
         </div>
 
+        <section class="services_container" id="services">
+            <h1>Nossos Serviços</h1>
+            <div class="cards_container">
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Consultoria Inteligente</h3>
+                    <p>Planejamento estratégico e orientação para impulsionar seus projetos com as melhores práticas do mercado.</p>
+                    <a href="consultoria.html">Saiba mais</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites modernos, responsivos e criativos feitos sob medida para o seu negócio crescer online.</p>
+                    <a href="desenvolvimento.html">Explorar</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Automação de Processos</h3>
+                    <p>Soluções inovadoras para otimizar tarefas e aumentar a eficiência da sua empresa.</p>
+                    <a href="automacao.html">Ver detalhes</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Suporte Técnico</h3>
+                    <p>Atendimento especializado para garantir que seus sistemas funcionem sem interrupções.</p>
+                    <a href="suporte.html">Obter Suporte</a>
+                </div>
+            </div>
+        </section>
+
         <div class="about-us_container" id="about_us">
             <div class="col-50">
-                <img src="images/imagem de fundo.jpg" alt="Sobre Severino Solutions">
+                <img src="images/imagem de fundo.jpg" alt="Equipe Severino Solutions">
             </div>
             <div class="col-50">
                 <h4>
-                    A Severino Solutions é uma empresa dedicada a fornecer soluções tecnológicas inovadoras para atender às necessidades dos nossos clientes. Com uma equipe de profissionais experientes e apaixonados por tecnologia, estamos comprometidos em entregar serviços de alta qualidade que impulsionam o sucesso dos seus negócios. Nosso foco está em desenvolver estratégias personalizadas, desde o planejamento até a execução, garantindo que cada projeto seja adaptado às particularidades de cada cliente. Valorizamos a transparência, a eficiência e a inovação, sempre buscando superar expectativas e gerar resultados concretos. Seja na criação de sistemas, no desenvolvimento de websites, na automação de processos ou no suporte técnico, nosso objetivo é ser um parceiro confiável na jornada de transformação digital. Acreditamos que a tecnologia é uma ponte para o crescimento, e estamos prontos para construir esse caminho junto com você.
+                    A Severino Solutions é uma empresa dedicada a fornecer soluções tecnológicas inovadoras para atender às necessidades dos nossos clientes. Com uma equipe de profissionais experientes e apaixonados por tecnologia, estamos comprometidos em entregar serviços de alta qualidade que impulsionam o sucesso dos seus negócios. Nosso foco está em desenvolver estratégias personalizadas, desde o planejamento até a execução, garantindo que cada projeto seja adaptado às particularidades de cada cliente. Valorizamos a transparência, a eficiência e a inovação, sempre buscando superar expectativas e gerar resultados concretos. Seja na criação de sistemas, no desenvolvimento de websites, na automação de processos ou no suporte técnico, nosso objetivo é ser um parceiro confiável na jornada de transformação digital.
                 </h4>
             </div>
         </div>
     </main>
+
+    <button id="backToTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
 
     <footer>
         <div class="footer_container">
             <h5>©2025 Severino Solutions - Todos os direitos reservados. Desenvolvido por Davi Severino</h5>
         </div>
     </footer>
+    <script>
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
 </body>
 </html>

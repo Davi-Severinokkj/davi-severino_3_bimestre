@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     background: url('images/imagem de fundo 2.png') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -58,7 +57,6 @@ body {
     padding: 9px 20px;
     gap: 15px;
     font-size: 18px;
-    font-weight: 300;
 }
 
 .nav_container a {
@@ -68,7 +66,6 @@ body {
 }
 
 .nav_container a:hover {
-    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
@@ -88,6 +85,7 @@ body {
     margin: 50px auto;
     border: 1px solid black;
     border-radius: 10px;
+    max-width: 900px;
 }
 
 .text_main h1 {
@@ -132,7 +130,7 @@ body {
 
 .service_box a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .service_box a:hover {
@@ -165,7 +163,6 @@ body {
 
 .footer_container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: gray;
@@ -178,6 +175,21 @@ body {
     text-align: center;
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -186,21 +198,17 @@ html {
     .col-50 {
         width: 100%;
     }
-
     .nav_container {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-
     .icons-services_container {
         gap: 20px;
     }
-
     .service_box i {
         font-size: 50px;
     }
-
     .text_main {
         margin: 30px 10px;
         padding: 15px;

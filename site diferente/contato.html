@@ -6,6 +6,7 @@
     <title>Contato - Severino Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <main>
@@ -16,10 +17,10 @@
                 </div>
                 <div class="col-50">
                     <div class="contatos">
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                    </div>                                   
-                </div>  
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -28,7 +29,6 @@
             <a href="index.html#services">Serviços</a>
             <a href="index.html#about_us">Sobre</a>
             <a href="contato.html">Contato</a>
-            <input type="search" placeholder="Pesquisar...">
         </nav>
 
         <div class="text_main dois">
@@ -37,21 +37,16 @@
         </div>
 
         <div class="services_container">
-            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: white;">
-                
+            <form action="#" method="post" style="display:flex;flex-direction:column;gap:15px;max-width:600px;margin:20px auto;padding:20px;border:1px solid #ccc;border-radius:10px;background-color:white;">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                 <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="6" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-
-                <button type="submit" style="padding: 12px; border: none; border-radius: 5px; background-color: gray; color: white; font-size: 16px; cursor: pointer;">Enviar</button>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="6" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </main>
